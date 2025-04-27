@@ -1,0 +1,148 @@
+/*
+ *
+ * Mobile first
+ *
+ */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Scala */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+h1 { font-size: 1.5rem; }  /* 24px */
+h2 { font-size: 1.3rem; }  /* 20.8px */
+h3 { font-size: 1.15rem; } /* 18.4px */
+h4 { font-size: 1rem; }    /* 16px */
+h5 { font-size: 0.9rem; }  /* 14.4px */
+h6 { font-size: 0.8rem; }  /* 12.8px */
+
+/* Utils */
+.no-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+/* Animations */
+.moving {
+    animation: moving 3s linear infinite;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    2% {
+        transform: translateX(25px);
+    }
+    4% {
+        transform: translateX(0);
+    }
+    6% {
+        transform: translateX(25px);
+    }
+    8% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(15px);
+    }
+    12% {
+        transform: translateX(0);
+    }
+    14% {
+        transform: translateX(15px);
+    }
+    16% {
+        transform: translateX(0);
+    }
+    18% {
+        transform: translateX(5px);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    22% {
+        transform: translateX(5px);
+    }
+    24% {
+        transform: translateX(0);
+    }
+}
+
+/* Dots */
+.dots {
+    display: inline-block;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: bounce 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+
+
+
+/*
+ *
+ * Tablet
+ *
+ */
+
+@media (min-width: 576px) {
+
+    h1 { font-size: 1.75rem; } /* 28px */
+    h2 { font-size: 1.5rem; }  /* 24px */
+    h3 { font-size: 1.3rem; }  /* 20.8px */
+    h4 { font-size: 1.15rem; } /* 18.4px */
+    h5 { font-size: 1rem; }    /* 16px */
+    h6 { font-size: 0.9rem; }  /* 14.4px */
+
+}
+
+
+/*
+ *
+ * Desktop
+ *
+ */
+@media (min-width: 1200px) {
+
+
+
+}
